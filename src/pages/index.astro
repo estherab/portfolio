@@ -1,0 +1,94 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import SocialLink from '../components/SocialLink.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import MailIcon from '../components/icons/Mail.astro';
+import SchoolIcon from '../components/icons/School.astro'
+import Experience from '../components/Experience.astro';
+import BriefcaseIcon from '../components/icons/Briefcase.astro';
+import SkillsIcon from '../components/icons/Skills.astro';
+import CodeIcon from '../components/icons/Code.astro';
+import Proyects from '../components/Proyects.astro';
+import Studies from '../components/Studies.astro';
+import Html from '../components/icons/Html.astro';
+import Css from '../components/icons/Css.astro';
+import Javascript from '../components/icons/Javascript.astro';
+import React from '../components/icons/React.astro';
+import Node from '../components/icons/Node.astro';
+import Python from '../components/icons/Python.astro';
+import Django from '../components/icons/Django.astro';
+import Java from '../components/icons/Java.astro';
+import Mysql from '../components/icons/Mysql.astro';
+import Mongo from '../components/icons/Mongo.astro';
+import Skills from '../components/Skills.astro';
+---
+
+<Layout title="Portfolio de Esther">
+	<main class="px-4 mx-2">
+		<section class="flex flex-col md:flex-row justify-center items-center gap-x-3 gap-y-10 w-full mx-auto lg:w-[1050px] pt-44 pb-16">
+			<div class="w-3/5">
+				<img class="rounded-full border-solid border-2 border-yellow-300" src="../public/image.png" alt="Esther photo" />
+			</div>
+			
+			<div class="w-5/7">
+				<h1 class="text-5xl font-bold tracking-tight dark:text-white">
+					Hola, soy Esther
+				</h1>
+				<p class="mt-6 text-xl [&>strong]:text-yellow-300 [&>strong]:font-semibold dark:text-gray-300">
+					<strong>Graduada en Ingeniería Informática.</strong> Más de 2 años de experiencia como ingeniera QA.
+					Recientemente he cursado un Bootcamp de desarrollo web Fullstack.
+				</p>
+
+				<nav class="flex gap-x-4 mt-6">
+					<SocialLink href="https://www.linkedin.com/in/esther-avila-benito/">
+						<LinkedInIcon class="size-6" />
+						LinkedIn
+					</SocialLink>	
+					<SocialLink href="https://github.com/estherab">
+						<GitHubIcon class="size-6" />
+						GitHub
+					</SocialLink>	
+					<SocialLink href="mailto:esther.abenito@gmail.com">
+						<MailIcon class="size-6" />
+						Email
+					</SocialLink>			
+				</nav>
+			</div>
+		</section>
+
+		<section id="experiencia" class="w-full mx-auto lg:w-[740px] pb-24">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<SkillsIcon class="size-7" />
+				Skills
+			</h2>
+			<Skills />
+		</section>
+
+		<section id="experiencia" class="w-full mx-auto lg:w-[740px] pb-24">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<BriefcaseIcon class="size-7" />
+				Experiencia laboral
+			</h2>
+			<Experience />
+		</section>
+
+		<h2 class="mx-auto lg:w-[740px] text-2xl font-semibold mb-10 flex gap-x-3 items-center">
+			<CodeIcon class="size-7" />
+			Proyectos
+		</h2>
+		<section id="proyectos" class="mx-auto lg:w-[1040px] w-full  pb-24">
+			<Proyects />
+		</section>
+
+		<section id="formacion" class="w-full mx-auto lg:w-[740px] pb-24">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<SchoolIcon class="size-7" />
+				Formación académica
+			</h2>
+			<Studies />
+		</section>
+	</main>
+</Layout>
+

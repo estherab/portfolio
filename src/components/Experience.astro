@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCIE = [
+  {
+    date: "Octubre 2022 - actualmente",
+    title: "Ingeniera QA Senior",
+    company: "Viewnext",
+    description:
+      "Diseño y ejecución de pruebas manuales y automáticas con la herramienta UFT sobre las aplicaciones móviles (Android e IOS) para un cliente del sector energía. Colaboración con el equipo de desarrollo. Estimación de pruebas a partir de documentación proporcionada por el cliente.",
+  },
+  {
+    date: "Noviembre 2021 - octubre 2022",
+    title: "QA Tester",
+    company: "MTP",
+    description:
+      "Diseño y ejecución de pruebas manuales sobre la herramienta Salesforce durante el proceso de transformación digital de un cliente del sector telecomunicaciones. Realización de pruebas de integración. Gestión de pruebas de usuarios finales.",
+  },
+  {
+    date: "Marzo 2021 - septiembre 2021",
+    title: "Consultora SAP",
+    company: "Hiberus",
+    description:
+      "Gestión del módulo Vístex de SAP, módulo de tramitación de pedidos para un cliente del sector farmacéutico.",
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
