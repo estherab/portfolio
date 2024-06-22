@@ -1,0 +1,28 @@
+---
+import StudiesItem from "./StudiesItem.astro";
+
+const STUDIES = [
+    {
+      title: 'Certificado profesional de desarrollador backend de Meta',
+      institution: 'Coursera',
+      description: 'Curso teórico práctico impartido por Meta a través de Coursera de Python y el framework Django',
+      date: 'Diciembre 2023'
+    },
+    {
+        title: 'Curso de Spring',
+        institution: 'KeepCoding',
+        description: 'Desarrollo de API Rest con Spring Boot',
+        date: 'Enero 2024'
+    }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    STUDIES.map((study) => (
+      <li class="">
+        <StudiesItem {...study} />
+      </li>
+    ))
+  }
+</ol>
