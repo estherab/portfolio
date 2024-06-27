@@ -82,8 +82,8 @@ const PROJECTS = [
 <section class="grid justify-center grid-cols-[500px] lg:grid-cols-[500px_500px] grid-rows-[350px_350px_350px]  gap-20">
   {
     PROJECTS.map(({image, title, description, tags, github, link}) => (
-      <article class="bg-cover rounded-lg" style={`background-image: url(${image})`}>
-        <div class="bg-black bg-opacity-55 px-10 pt-32 pb-4 flex flex-wrap flex-col">
+      <article class="bg-cover rounded-xl" style={`background-image: url(${image})`}>
+        <div class="bg-black bg-opacity-55 rounded-xl px-10 pt-32 pb-4 flex flex-wrap flex-col">
           <h1 class="text-yellow-300 text-2xl mb-5 transform translate-y-10">
             {title}
           </h1>
