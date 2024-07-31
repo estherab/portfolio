@@ -49,6 +49,13 @@ const PROJECTS = [
         tags: [TAGS.REACT]
     },
     {
+        title: 'Hotel Phegon (en proceso)',
+        description: 'Aplicación Fullstack para la gestión de reservas, usuarios y habitaciones de un hotel.',
+        github: 'https://github.com/estherab/hotel_management_back',
+        image: 'project-hotel.png',
+        tags: [TAGS.SPRING,TAGS.REACT]
+    },
+    {
         title: 'Gold Movies',
         description: 'Aplicación Fullstack para la visualización de tráilers de películas y gestión de las reseñas.',
         github: 'https://github.com/estherab/movies-client',
@@ -79,7 +86,7 @@ const PROJECTS = [
     },
 ]
 ---
-<section class="grid justify-center grid-cols-[500px] lg:grid-cols-[500px_500px] grid-rows-[350px_350px_350px]  gap-20">
+<section class="grid justify-center grid-cols-[500px] lg:grid-cols-[500px_500px] grid-rows-[350px_350px_350px_350px]  gap-20">
   {
     PROJECTS.map(({image, title, description, tags, github, link}) => (
       <article class="bg-cover rounded-xl" style={`background-image: url(${image})`}>
